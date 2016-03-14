@@ -1,0 +1,9 @@
+node_modules
+
+/config.js
+
+/logs
+*.log
+
+*.sublime-project
+*.sublime-workspace
