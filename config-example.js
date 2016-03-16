@@ -7,7 +7,7 @@ var config = {
 config.parseServerConfig = {
     appId: 'AppId',
     cloud: './cloud/main.js',
-    databaseURL: config.dbURL,
+    databaseURI: config.dbURL,
     serverURL: config.serverHost + ':' + config.port + '/parse',
     masterKey: '', //  keep it secret.
 };
