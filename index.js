@@ -1,4 +1,5 @@
 var express = require('express');
+var config = require('./config.js');
 var ParseServer = require('./routes/ParseServer.js');
 
 var app = new express();
@@ -8,6 +9,6 @@ app.use('*', function(req, resp) {
     resp.send('{"msg":"default page."}');
 });
 
-app.listen(8080, function() {
-    console.log('Server is running on 8080...');
+app.listen(config.port, function() {
+    console.log('Server is running on ' + config.port + '...');
 });
