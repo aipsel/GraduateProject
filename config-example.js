@@ -6,10 +6,11 @@ var config = {
 
 config.parseServerConfig = {
     appId: 'AppId',
-    cloud: './cloud/main.js',
+    cloud: __dirname + '/cloud/main.js',
     databaseURI: config.dbURL,
     serverURL: config.serverHost + ':' + config.port + '/parse',
     masterKey: '', //  keep it secret.
+    clientKey: 'ClientKey'
 };
 
 module.exports = config;
