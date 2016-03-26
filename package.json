@@ -17,6 +17,8 @@
   "homepage": "https://github.com/aipsel/GraduateProject",
   "dependencies": {
     "express": "~4.13.1",
-    "parse-server": "^2.1.5"
+    "parse-server": "^2.1.5",
+    "randomstring": "^1.1.4",
+    "urllib": ">=0.5.2"
   }
 }
