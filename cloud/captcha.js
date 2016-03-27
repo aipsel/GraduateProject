@@ -55,7 +55,7 @@ function send(phone, template, callback) {
                     callback);
             },
             error: function (captcha, error) {
-                console.log('err. ' + error.message);
+                console.log('DB Error: ' + error.code + '--' + error.message);
                 callback(error, "Can't save Captcha.");
             },
         });
@@ -70,7 +70,7 @@ function check(phone, captcha, callback) {
                     callback(true);
                 },
                 error: function(obj, error) {
-                    console.log("Captcha Delete Failed: " + obj.get("phone"));
+                    console.log("Captcha Delete Failed: " + obj.get("phone") + error.code + '--' + error.message);
                     callback(true);
                 },
             });
